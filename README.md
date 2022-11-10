@@ -1,6 +1,11 @@
 # BMICalculator
 
+
 ### Con la realización de este proyecto pongo en práctica el ruteo, comunicación en entre componentes, estilos de diversas formas, entre otras cosas
+
+## Deploy
+## [https://bmicalculator-luthors.netlify.app/](https://bmicalculator-luthors.netlify.app/)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
 
