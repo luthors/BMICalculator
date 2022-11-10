@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col-lg-4 offset-lg-4">
+    <h1 class="title">BMI CALCULATOR</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="backgroundItem" [ngClass]="{'sex-disable': sex==='Female' }">
+          <div class="container cnt-select" (click)="male()">
+            <i class="fas fa-mars sex"></i>
+
+            <p>Male</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="backgroundItem" [ngClass]="{'sex-disable': sex==='Male'}">
+          <div class="container cnt-select" (click)="female()">
+            <i class="fas fa-venus sex"></i>
+            <p>Female</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="backgroundItem">
+          <div class="container">
+            <p>Height</p>
+            <div class="numberStyle">
+              {{height}}
+              <span class="cm">cm</span>
+            </div>
+            <input type="range" (input)="heightChange($event)" [value]="height" min="120" max="220" class="form-range" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="backgroundItem">
+          <div class="container">
+            <p>Weight</p>
+            <div class="numberStyle">
+              {{weight}}
+            </div>
+            <div>
+              <i class="fas fa-minus minus-plus" (click)="weight=weight-1"></i>
+              <i class="fas fa-plus minus-plus" (click)="weight=weight+1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="backgroundItem">
+          <div class="container">
+            <p>Age</p>
+            <div class="numberStyle">
+              {{age}}
+            </div>
+            <div>
+              <i class="fas fa-minus minus-plus" (click)="age=age-1"></i>
+              <i class="fas fa-plus minus-plus" (click)="age=age+1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <button (click)="calculateBMI()" class="btn btn-primary btn-lg btn-block btn-color">
+          Calculate
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
