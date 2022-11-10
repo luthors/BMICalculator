@@ -1,5 +1,7 @@
 # BMICalculator
 
+### Con la realización de este proyecto pongo en práctica el ruteo, comunicación en entre componentes, estilos de diversas formas, entre otras cosas
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
 
 ## Development server
